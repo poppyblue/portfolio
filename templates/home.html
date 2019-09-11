@@ -1,1 +1,15 @@
-hello
+<!DOCTYPE html>
+<html>
+<head>
+	<title>主页</title>
+</head>
+<body>
+
+{% for gallery in gallerys.all %}
+{{ gallery.description }}
+{# <img src="{{ MEDIA_URL }}{{ 'default.png' }}" class="img-circel" alt="用户图像"> #}
+
+{% endfor %}
+
+</body>
+</html>
