@@ -1,24 +1,3 @@
-<!--
-<!DOCTYPE html>
-<html>
-<head>
-	<title>博客页面</title>
-</head>
-<body>
-	<h1>blog</h1>
-{% for blog in blogs.all %}
-{{ blog.title }}
-<br>
-{{ blog.date }}
-<br>
-<img src="{{ blog.image.url}}" height="20%">
-<br>
-{{ blog.text }}
-<br>
-{% endfor %}
-</body>
-</html>
--->
 <!doctype html>
 <html lang="en">
   <head>
@@ -110,9 +89,9 @@
   </section>
   <div class="container">
   	{% for blog in blogs.all %}
-	<h2 <a href="#">
+	<h2><a href="{{ blog.id }}">
 		{{ blog.title }}
-		</a>>
+		</a>
 	</h2>
 	{{ blog.date }}
 	<br>

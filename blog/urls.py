@@ -21,4 +21,5 @@ from .import views
 urlpatterns = [
     # views中的blog_page方法
     path('', views.blog_page),
+    path('<int:blog_id>/', views.blog_text),
 ]
